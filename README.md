@@ -1,9 +1,9 @@
 #  The Casting Agency General Introduction
 The Casting Agency application is a RESTful Transactional API to perform CRUD operations with RBAC completed by karam sawalha.
 ```
-My Project API is hosted at: [ThisLink](https://karamcapstoneproject.onrender.com)
+My Project API is hosted at: [ThisBaseLink](karamcapstoneproject.onrender.com)
 
-AUTH0 LOGIN URL to get JWT at: [ThisLink](https://dev-karamsawalha.us.auth0.com/authorize?audience=karamcapstone&response_type=token&client_id=6el7BJBoNh04IO1XBLkrpoRjuYUrB0hC&redirect_uri=https://sample/callback)
+AUTH0 LOGIN URL to get JWT at: [ThisLink](dev-karamsawalha.us.auth0.com/authorize?audience=karamcapstone&response_type=token&client_id=6el7BJBoNh04IO1XBLkrpoRjuYUrB0hC&redirect_uri=https://sample/callback)
 
 ```
 ---
@@ -21,27 +21,27 @@ AUTH0 LOGIN URL to get JWT at: [ThisLink](https://dev-karamsawalha.us.auth0.com/
 ---
 ## Role Based Access Control:
 1. Casting Assistant
-    - 'view:actors' 
-    - 'view:movies'
+    - `view:actors` 
+    - `view:movies`
 
 2. Casting Director
-    - 'view:actors' 
-    - 'view:movies'
-    - 'post:actors'
-    - 'delete:actors'
-    - 'update:actors'
-    - 'update:actors'
+    - `view:actors` 
+    - `view:movies`
+    - `post:actors`
+    - `delete:actors`
+    - `update:actors`
+    - `update:actors`
 
 3. Executive Producer 
     * FULL CONTROL OVER ALL ENDPOINTS
-    - 'view:actors' 
-    - 'view:movies'
-    - 'post:actors'
-    - 'post:movies'
-    - 'delete:actors'
-    - 'delete:movies'
-    - 'update:actors'
-    - 'update:actors'
+    - `view:actors` 
+    - `view:movies`
+    - `post:actors`
+    - `post:movies`
+    - `delete:actors`
+    - `delete:movies`
+    - `update:actors`
+    - `update:actors`
 
 ---
 ## Running The App In Your Local Environment:
@@ -58,34 +58,34 @@ python3 app.py
 * These are the available endpoints for this API, Authentication is REQUIRED in all of them.
 
 1. GET
-    - '/actors' 
-    - '/movies'
+    - `/actors` 
+    - `/movies`
 2. POST 
-    - '/actors' 
-    - '/movies'
+    - `/actors` 
+    - `/movies`
 3. PATCH 
-    - '/actors/<ID>'
-    - '/movies/<ID>'
+    - `/actors/<ID>`
+    - `/movies/<ID>`
 4. DELETE 
-    - '/actors/<ID>'
-    - '/movies/<ID>'
+    - `/actors/<ID>`
+    - `/movies/<ID>`
 
 ---
 ### Headers:
 * These Headers must be specified when calling any request to the above mentioned endpoints.
 ```
-- Content-Type: 'application/json'
-- Authorization: 'Bearer \<JWT_TOKEN>'
+- Content-Type: `application/json`
+- Authorization: `Bearer \<JWT_TOKEN>`
 ```
 ---
 
 ### Example Requests and Responses:
 ```
-** IMPORTANT: the [Authorization: 'Bearer \<JWT_TOKEN>'] must be included in any request. **
+** IMPORTANT: the [Authorization: `Bearer \<JWT_TOKEN>`] must be included in any request. **
 ```
 ### Actors Endpoints
 1. GET /actors
-    - Required permissions: 'view:actors'
+    - Required permissions: `view:actors`
     - Response body if success:
 
     ```
@@ -114,7 +114,7 @@ python3 app.py
     ```
 
 2. GET /actors/<ID>
-    - Required permissions: 'view:actors'
+    - Required permissions: `view:actors`
     - Response body if success:
 
     ```
@@ -127,7 +127,7 @@ python3 app.py
     ```
 
 3. POST /actors
-    - Required permissions: 'post:actors'
+    - Required permissions: `post:actors`
     - Request body:
 
     ``` 
@@ -148,7 +148,7 @@ python3 app.py
     }
     ```
 4. PATCH /actors/<ID>
-    - Required permissions: 'update:actors'
+    - Required permissions: `update:actors`
     - Request body:
     
 
@@ -169,7 +169,7 @@ python3 app.py
     ```
 
 5. DELETE /actors/<ID>
-    - Required permissions: 'delete:actors'
+    - Required permissions: `delete:actors`
     - Response body if success:
 
     ```
@@ -180,7 +180,7 @@ python3 app.py
 ### Movies Endpoints
 
 1. GET /movies
-    - Required permissions: 'view:movies'
+    - Required permissions: `view:movies`
     - Response body if success:
 
     ```
@@ -207,7 +207,7 @@ python3 app.py
     ```
 
 2. GET /movies/<ID>
-    - Required permissions: 'view:movies'
+    - Required permissions: `view:movies`
     - Response body if success:
 
     ```
@@ -219,7 +219,7 @@ python3 app.py
     ```
 
 3. POST /movies
-    - Required permissions: 'post:movies'
+    - Required permissions: `post:movies`
     - Request body:
 
     ``` 
@@ -238,7 +238,7 @@ python3 app.py
     }
     ```
 4. PATCH /movies/<ID>
-    - Required permissions: 'update:movies'
+    - Required permissions: `update:movies`
     - Request body:
 
     ```
@@ -257,7 +257,7 @@ python3 app.py
     ```
 
 5. DELETE /movies/<ID>
-    - Required permissions: 'delete:movies'
+    - Required permissions: `delete:movies`
     - Response body if success:
 
     ```
