@@ -73,8 +73,8 @@ python3 app.py
 ### Headers:
 * These Headers must be specified when calling any request to the above mentioned endpoints.
 ```
-- Content-Type: `application/json`
-- Authorization: `Bearer \<JWT_TOKEN>`
+- Content-Type: application/json
+- Authorization: Bearer \<JWT>
 ```
 ---
 
@@ -276,7 +276,8 @@ IMPORTANT: the [Authorization] header must be included in any request.
     ```
 
 ### Error codes & raised exceptions
-* If your request fails to be processed on the server or has some invalid inputs, missing fields, or even authorization failure, the API will return an error code with an error message as given below
+* If your request fails to be processed on the server or has some invalid inputs, missing fields, or even authorization failure, the API will return an error code with an error message as given below:
+
     - 401: Authorization header not defined or invalid token.
     - 404: No record matching the given id was found.
     - 400: Missing fields or invalid input.
