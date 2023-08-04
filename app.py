@@ -4,7 +4,7 @@ from models import setup_db
 
 
 
-app = Flask(__name__)   #setting up the app after importing necessary resources
+app = Flask(__name__)   #setting up the app and database after importing necessary resources
 setup_db(app)
 CORS(app)
 
