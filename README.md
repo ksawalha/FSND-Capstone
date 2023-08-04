@@ -54,7 +54,7 @@ python3 app.py
 ---
 ## API DOCUMENTATION
 ### Endpoints:
-* These are the available endpoints for this API, Authentication is REQUIRED in all of them.
+* These are the available endpoints for this API, Authentication is REQUIRED for all of them.
 
 1. GET
     - `/actors` 
