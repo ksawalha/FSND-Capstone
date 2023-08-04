@@ -155,7 +155,7 @@ def update_movie(id):
 
 
 @app.route('/movies/<int:id>')                   # Gets a movie by given id
-@requires_auth('get:movies')
+@requires_auth('view:movies')
 def get_movie(id):
     movie = Movie.query.get(id)
     if not movie:
