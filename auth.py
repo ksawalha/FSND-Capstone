@@ -7,7 +7,8 @@ from jose import jwt
 
 
 '''
-https://dev-karamsawalha.us.auth0.com/authorize?audience=karamcapstone&response_type=token&client_id=6el7BJBoNh04IO1XBLkrpoRjuYUrB0hC&redirect_uri=
+Auth0 URL to get JWT
+https://dev-karamsawalha.us.auth0.com/authorize?audience=karamcapstone&response_type=token&client_id=6el7BJBoNh04IO1XBLkrpoRjuYUrB0hC&redirect_uri=https://sample/callback
 
 '''
 
