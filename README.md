@@ -81,10 +81,11 @@ python3 app.py
 
 ### Example Requests and Responses:
 ```
-** IMPORTANT: the [Authorization: `Bearer \<JWT_TOKEN>`] must be included in any request. **
+IMPORTANT: the [Authorization] header must be included in any request.
 ```
 ### Actors Endpoints
 1. GET /actors
+    - Returns actors list
     - Required permissions: `view:actors`
     - Response body if success:
 
@@ -113,7 +114,8 @@ python3 app.py
     }
     ```
 
-2. GET /actors/<ID>
+3. GET /actors/<ID>
+    - Returns an actor by given ID
     - Required permissions: `view:actors`
     - Response body if success:
 
@@ -126,7 +128,8 @@ python3 app.py
     }
     ```
 
-3. POST /actors
+4. POST /actors
+    - Creates a new actor
     - Required permissions: `post:actors`
     - Request body:
 
@@ -148,6 +151,7 @@ python3 app.py
     }
     ```
 4. PATCH /actors/<ID>
+    - Updates an existing actor by given ID
     - Required permissions: `update:actors`
     - Request body:
     
@@ -169,6 +173,7 @@ python3 app.py
     ```
 
 5. DELETE /actors/<ID>
+    - Deletes an existing actor
     - Required permissions: `delete:actors`
     - Response body if success:
 
@@ -180,6 +185,7 @@ python3 app.py
 ### Movies Endpoints
 
 1. GET /movies
+    - Returns movies list
     - Required permissions: `view:movies`
     - Response body if success:
 
@@ -206,7 +212,8 @@ python3 app.py
     }
     ```
 
-2. GET /movies/<ID>
+3. GET /movies/<ID>
+    - Returns a movie by given ID
     - Required permissions: `view:movies`
     - Response body if success:
 
@@ -218,7 +225,8 @@ python3 app.py
     }
     ```
 
-3. POST /movies
+4. POST /movies
+    - Creates a new movie
     - Required permissions: `post:movies`
     - Request body:
 
@@ -237,7 +245,8 @@ python3 app.py
         "title": "string"
     }
     ```
-4. PATCH /movies/<ID>
+6. PATCH /movies/<ID>
+    - Updates an existing movie by given ID
     - Required permissions: `update:movies`
     - Request body:
 
@@ -256,7 +265,8 @@ python3 app.py
     }
     ```
 
-5. DELETE /movies/<ID>
+7. DELETE /movies/<ID>
+    - Deletes an existing movie
     - Required permissions: `delete:movies`
     - Response body if success:
 
