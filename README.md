@@ -1,5 +1,6 @@
 #  The Casting Agency General Introduction
-The Casting Agency application is a RESTful Transactional API to perform CRUD operations with RBAC completed by karam sawalha.
+The Casting Agency application is a RESTful Transactional API to perform CRUD operations with RBAC.
+This build was developed by karam sawalha.
 
 My Project API is hosted at: [ThisBaseLink](karamcapstoneproject.onrender.com)
 
