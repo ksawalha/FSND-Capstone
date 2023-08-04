@@ -1,10 +1,7 @@
 #  The Casting Agency General Introduction
-The Casting Agency application is a RESTful Transactional API to perform CRUD operations with RBAC.
+The Casting Agency application is a RESTful Transactional API hosted on AWS VIA CI/CD pipeline to perform CRUD operations with RBAC.
 This build was developed by karam sawalha.
 
-My Project API is hosted at: [ThisBaseLink](karamcapstoneproject.onrender.com)
-
-AUTH0 LOGIN URL to get JWT at: [ThisLink](dev-karamsawalha.us.auth0.com/authorize?audience=karamcapstone&response_type=token&client_id=6el7BJBoNh04IO1XBLkrpoRjuYUrB0hC&redirect_uri=https://karamcapstoneproject.onrender.com)
 
 ---
 ## Database Models & Table Design:
