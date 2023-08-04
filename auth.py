@@ -12,9 +12,9 @@ https://dev-karamsawalha.us.auth0.com/authorize?audience=karamcapstone&response_
 '''
 
 # Authentication as an ENV variables
-AUTH0_DOMAIN = os.environ.get('AUTH0_DOMAIN')
+AUTH0_DOMAIN = os.environ['AUTH0_DOMAIN']
 ALGORITHMS = [os.environ['ALGORITHMS']]
-API_AUDIENCE = os.environ.get('API_AUDIENCE')
+API_AUDIENCE = os.environ['API_AUDIENCE']
 AUTH0_ISSUER = f'https://{AUTH0_DOMAIN}/'
 
 '''
